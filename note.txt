@@ -5,3 +5,11 @@
 开始学习新的内容
 4.git status 查看当前状态
 5.git diff filename
+
+6.git log 显示从最近到最远的提交日志
+7.git reset --hard <commit id> 版本回退
+	HEAD^		表示当前版本上一个版本
+	HEAD^^		表示当前版本上两个版本
+	HEAD~100	表示当前版本上100个版本
+8.git reflog 记录每一次命令，可查看当前版本之后版本的commit id
+
