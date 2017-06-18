@@ -13,3 +13,14 @@
 	HEAD~100	表示当前版本上100个版本
 8.git reflog 记录每一次命令，可查看当前版本之后版本的commit id
 
+
+【名词概念】
+1.工作区（Working Directory）
+当前所在目录即一个工作区
+
+2.版本库（Repository）
+工作区中有一个隐藏目录.git, 这个不算工作区, 而是Git的版本库
+版本库中存了很多东西, 最重要的就是暂存区(stage), 还有Git为我们自动创建的第一个分支(master), 以及指向master的一个指针(HEAD)
+
+git add 把文件添加到暂存区
+git commit 把暂存区的所有内容提交到当前分支
