@@ -7,7 +7,7 @@
 5.git diff filename
 
 6.git log 显示从最近到最远的提交日志
-7.git reset --hard <commit id> 版本回退
+7.git reset --hard <commit id> 版本回退/撤销修改
 	HEAD^		表示当前版本上一个版本
 	HEAD^^		表示当前版本上两个版本
 	HEAD~100	表示当前版本上100个版本
@@ -24,3 +24,11 @@
 
 git add 把文件添加到暂存区
 git commit 把暂存区的所有内容提交到当前分支
+
+
+【具体操作】
+1.撤销修改
+（1）修改后还没有放入暂存区
+	git checkout -- filename
+（2）修改后放入了暂存区(git add)
+	git reset HEAD filename
